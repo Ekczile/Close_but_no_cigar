@@ -23,8 +23,9 @@ def off_by_one_number(my_numbers, bash_numbers)
     end
     counter == my_numbers.length - 1
 end
+p how_many_match("1233", ["5341", "4454", "1233", "1234"])
 
-def off_by_one_array(my_numbers, bash_numbers)
+def off_by_one(my_numbers, bash_numbers)
     array = []
     bash_numbers.each do |winner|
         if off_by_one_number(winner, my_numbers)
@@ -33,4 +34,4 @@ def off_by_one_array(my_numbers, bash_numbers)
     end
     array
 end
-p off_by_one_array("1234", ["5341", "4454", "1233", "1234"])
+p off_by_one("1233", ["5341", "4454", "1233", "1234"])
