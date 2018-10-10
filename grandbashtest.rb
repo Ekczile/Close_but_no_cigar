@@ -34,5 +34,16 @@ class Test_grandbash < Minitest::Test
     my_numbers = "1344"
     bash_numbers = ["1233", "1345", "3455", "1234", "9999", "1343", "1111", "2344"]
     assert_equal(["1345", "1343", "2344"], off_by_one(my_numbers, bash_numbers))
-end
+    end
+    def test_how_any_differnet
+        my_numbers = "7777"
+        bash_numbers = ["7777", "7778", "7788", "7888", "8888"]
+        assert_equal(["4", "3", "2", "1", "0"], off_by_how_many(my_numbers, bash_numbers))
+    end
+    def test_how_any_differnet
+        my_numbers = "1337"
+        bash_numbers = ["1337", "1345", "7819", "1227", "2338", "1345", "9337"]
+        assert_equal(["4", "2", "0", "2", "2", "2", "3"], off_by_how_many(my_numbers, bash_numbers))
+    end
+
 end
