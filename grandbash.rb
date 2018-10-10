@@ -1,16 +1,17 @@
-def how_many_match(my_numbers, bash_numbers)
-    counter = 0
-    i = 0
-    my_numbers.length.times do
-    p bash_numbers[i]
-    p my_numbers[i]
-        if bash_numbers[i] == my_numbers[i]
-        counter += 1
-        end
-    i += 1
-    end
-    p counter
-end
+# def how_many_match(my_numbers, bash_numbers)
+#     counter = 0
+#     i = 0
+#     my_numbers.length.times do
+#     # p bash_numbers[i]
+#     # p my_numbers[i]
+#         if bash_numbers[i] == my_numbers[i]
+#         counter += 1
+#         end
+#     i += 1
+#     end
+#     counter
+#     return counter
+# end
 
 def off_by_one_number(my_numbers, bash_numbers)
     counter = 0
@@ -23,7 +24,6 @@ def off_by_one_number(my_numbers, bash_numbers)
     end
     counter == my_numbers.length - 1
 end
-p how_many_match("1233", ["5341", "4454", "1233", "1234"])
 
 def off_by_one(my_numbers, bash_numbers)
     array = []
@@ -34,4 +34,4 @@ def off_by_one(my_numbers, bash_numbers)
     end
     array
 end
-p off_by_one("1233", ["5341", "4454", "1233", "1234"])
+# p off_by_one("1233", ["5341", "4454", "1233", "1234"])
