@@ -23,7 +23,6 @@ def off_by_one_number(my_numbers, bash_numbers)
     end
     counter == my_numbers.length - 1
 end
-# p off_by_one_number("1234", "1239")
 
 def off_by_one_array(my_numbers, bash_numbers)
     array = []

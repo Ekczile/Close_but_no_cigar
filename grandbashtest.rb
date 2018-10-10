@@ -10,4 +10,9 @@ class Test_grandbash < Minitest::Test
         bash_numbers = ["1233", "1345", "3455", "1234"]
         assert_equal(["1234"], how_many_match(my_numbers, bash_numbers))
     end
+    def test_array_of_4_numbers
+        my_numbers = "1233"
+        bash_numbers = ["1233", "1345", "3455", "1234"]
+        assert_equal(["1233"], how_many_match(my_numbers, bash_numbers))
+    end
 end
