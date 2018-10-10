@@ -30,4 +30,9 @@ class Test_grandbash < Minitest::Test
         bash_numbers = ["1233", "1345", "3455", "1234", "9999", "1343", "1111", "2344", "0344"]
         assert_equal(["1345", "1343", "2344", "0344"], off_by_one(my_numbers, bash_numbers))
     end
+    def test_off_by_one_4
+    my_numbers = "1344"
+    bash_numbers = ["1233", "1345", "3455", "1234", "9999", "1343", "1111", "2344"]
+    assert_equal(["1345", "1343", "2344"], off_by_one(my_numbers, bash_numbers))
+end
 end
